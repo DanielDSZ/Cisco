@@ -1,0 +1,751 @@
+
+<!-- saved from url=(0473)https://prod-tf-ui.s3.amazonaws.com/s/ff9e491c-49be-4734-803e-a79e6e83dab1/resources/d897045c-37d2-4371-8494-f29d057f2a26/v1/en-US/Packet_Tracer_Configure_Wireless_Security.htm?response-cache-control=no-cache&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241020T023015Z&X-Amz-SignedHeaders=host&X-Amz-Expires=30&X-Amz-Credential=AKIAUJZRIEYBKYV2WA5Q%2F20241020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=341c459611c30c00aa9ca3cefc46a4d8baf3dfd14ecd10f05fc9ccf971c10286 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>Packet Tracer - Configure Wireless Security</title>
+<style>
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	page-break-after:avoid;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:normal;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.PageHead, li.PageHead, div.PageHead
+	{mso-style-name:"Page Head";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.AnswerLineL50, li.AnswerLineL50, div.AnswerLineL50
+	{mso-style-name:"Answer Line L50";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:bold;
+	font-style:italic;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Bulletlevel1, li.Bulletlevel1, div.Bulletlevel1
+	{mso-style-name:"Bullet level 1";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.ConfigWindow, li.ConfigWindow, div.ConfigWindow
+	{mso-style-name:"Config Window";
+	margin:0in;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-style:italic;}
+p.SubStepAlpha, li.SubStepAlpha, div.SubStepAlpha
+	{mso-style-name:"SubStep Alpha";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL50, li.BodyTextL50, div.BodyTextL50
+	{mso-style-name:"Body Text L50";
+	mso-style-link:"Body Text L50 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25, li.BodyTextL25, div.BodyTextL25
+	{mso-style-name:"Body Text L25";
+	mso-style-link:"Body Text L25 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.LabTitleInstVersred
+	{mso-style-name:"Lab Title Inst Vers \(red\)";
+	font-family:"Arial",sans-serif;
+	color:#EE0000;
+	font-weight:bold;}
+p.SubStepNum, li.SubStepNum, div.SubStepNum
+	{mso-style-name:"SubStep Num";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25Bold, li.BodyTextL25Bold, div.BodyTextL25Bold
+	{mso-style-name:"Body Text L25 Bold";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	color:white;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:SimSun;
+	font-weight:bold;}
+span.BodyTextL25Char
+	{mso-style-name:"Body Text L25 Char";
+	mso-style-link:"Body Text L25";}
+span.BodyTextL50Char
+	{mso-style-name:"Body Text L50 Char";
+	mso-style-link:"Body Text L50";}
+span.AnswerGray
+	{mso-style-name:"Answer Gray";
+	font-family:"Arial",sans-serif;
+	border:none;
+	font-weight:bold;
+	line-height: 1.25rem;
+	}
+.MsoChpDefault
+	{font-size: 11.5pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:76.3pt .75in .9in .75in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+
+/* Add css for textarea */
+
+.AnswerGray {
+			padding: 0.2rem;
+		}
+
+		.question-action-container {
+			margin-top: 6pt;
+			margin-right: 0in;
+			margin-bottom: 6pt;
+			margin-left: 0.5in;
+		}
+
+		.show-answer,
+		.hide-answer {
+			padding: 0.5rem 1rem;
+			background-color: #00bceb;
+			color: #fff;
+			border: 0px;
+			cursor: pointer;
+			font-size: 11.5pt;
+		}
+
+		.global-action-container {
+			display: flex;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		.global-action-container .btn__action {
+			margin: 10px;
+		}
+
+		.btn__container button.btn__action:not(.is-full-width) {
+			width: calc(50% - .5%);
+		}
+
+		.btn-text {
+			border: 0px;
+			padding: 0.5rem 1rem;
+			background-color: #6abf4b;
+			color: #fff;
+			border-radius: 0;
+			cursor: pointer;
+			font-size: 11.5pt;
+		}
+
+		.hidden {
+			display: none;
+		}
+		.dark-theme {
+        color: #fff;
+      }
+      .dark-theme .dark-color {
+        color: #fff !important;
+      }
+      .dark-theme p.ConfigWindow,
+      .dark-theme li.ConfigWindow,
+      .dark-theme div.ConfigWindow {
+        mso-style-name: "Config Window";
+        color: #212328;
+      }
+      .dark-theme h4 {
+        color: #212328;
+      }
+      .dark-theme .MsoTitle span {
+        color: #fff !important;
+      }
+      .dark-theme textarea {
+        background-color: #212328;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer > span {
+        padding: 4px;
+      }
+      .dark-theme .BodyTextL25Answer span {
+        color: #fff;
+      }
+      .dark-theme table tbody tr td {
+        color: #fff !important;
+      }
+      .dark-theme table .TableHeading {
+        color: #000;
+      }
+	  p.BodyTextL50Answer,
+	li.BodyTextL50Answer,
+	div.BodyTextL50Answer {
+		mso-style-name: "Body Text L50 Answer";
+		mso-style-link: "Body Text L50 Answer Char";
+		margin-top: 6.0pt;
+		margin-right: 0in;
+		margin-bottom: 6.0pt;
+		margin-left: .5in;
+		background: #D9D9D9;
+		font-size: 10.0pt;
+		font-family: "Arial", sans-serif;
+		font-weight: bold;
+	}
+	.dark-theme .BodyTextL50Answer {
+        background-color: #000;
+        color: #fff;
+    }
+
+</style>
+
+</head>
+
+
+<body lang="EN-US" style="word-wrap:break-word">
+
+<div class="WordSection1">
+
+<p class="MsoTitle">Packet Tracer - Configure Wireless Security</p>
+
+<h1>Objectives</h1>
+
+<p class="BodyTextL25">In this activity, you will configure a wireless router for
+a home network.</p>
+
+<p class="BodyTextL25Bold">Part 1: Modify Basic Security Settings</p>
+
+<p class="BodyTextL25Bold">Part 2: Configure Wireless Security on the Wireless
+Router</p>
+
+<h1>Required Resources</h1>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Latest version
+of Cisco Packet Tracer</p>
+
+<h1>Background / Scenario</h1>
+
+<p class="BodyTextL25">The default setting of a wireless router can easily be
+found by searching on the internet so the settings should be changed to prevent
+unauthorized access to your network. </p>
+
+<p class="BodyTextL25">In this activity, you will modify some of the security
+settings. The configuration of the wireless router in Packet Tracer can provide
+an example of the interface. The interface varies greatly depending on the model
+and manufacturer of a wireless router.</p>
+
+<h1>Instructions</h1>
+
+<h2 style="margin-left:0in;text-indent:0in">Part 1: Modify Basic Security
+Settings</h2>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 1: Modify the default administrative
+password.</h3>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>From the <b>PC</b>, open a web browser from the Desktop and navigate to <b>192.168.0.1</b>
+to access the <b>Home Net </b>wireless router.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Log in to the router using <b>admin</b> as the username and password.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>After logging in successfully, click <b>Administration</b> &gt; <b>Management</b>.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Modify the router password to a stronger one. Change the password to <b>aC0mpAny3</b>.
+Note that the new password has 8 characters with upper and lower-case digits
+and some of the vowels have been changed to numbers. Click <b>Save Settings</b>
+at the bottom of that screen.</p>
+
+<p class="SubStepAlpha">e.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Log into the router with the new password. Click <b>OK</b>. Click <b>Continue</b>
+to access the configuration page again.</p>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 2: Disable remote management
+on the wireless router.</h3>
+
+<p class="BodyTextL25">For security reasons, remote management, for example
+access from outside the local network, should be disabled.</p>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Check the current status of remote management on the wireless router. Select
+<b>Administration</b> <b>&gt; Remote Access</b>. At this time, remote management
+is enabled.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select the <b>Hacker</b> PC and navigate to <b>192.31.7.100</b> from the
+web browser. You should be presented with the request for a user name and a
+password. Enter the credentials of <b>admin</b> and the password <b>aC0mpAny3</b>
+and you should be able to access the wireless router configuration page. Close
+the web browser when done.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Return to the PC and log into the configuration page of the <b>Home Net </b>wireless
+router as needed to disable <b>Remote Management</b>. (<b>Administration</b>
+&gt; <b>Management</b>) Select <b>Disabled</b> and click <b>Save Settings</b>.
+Click <b>Continue</b>.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Return to the Hacker PC and navigate to <b>192.31.7.100</b>. You should
+no longer be able to the <b>Home Net </b>wireless router remotely.</p>
+
+<h2 style="margin-left:0in;text-indent:0in">Part 2: Configure Wireless Security
+on the Wireless Router</h2>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 1: Modify the default SSID
+name and disable the broadcast feature.</h3>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>While log into the <b>Home Net</b> wireless router from the <b>PC</b>, click
+<b>Wireless</b> and modify the SSID name to <b>aCompany</b>.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>For SSID Broadcast and click <b>Disabled</b>. Click <b>Save Settings</b>
+to continue.</p>
+
+<h4>Question:</h4>
+
+<p class="BodyTextL50" style="margin-top:0in">Check the topology. What happened
+to the wireless connectivity between the <b>Laptop</b> and <b>Home Net</b>?</p>
+
+<!-- <p class=AnswerLineL50>Type your answers here.</p> -->
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;">
+			<legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea>
+		</fieldset>
+	</div>
+
+	 <p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+border:none"><span style="border:none">The Laptop has lost connectivity to Home Net because the Laptop has not been configured with the new SSID name.</span></span></span></p>
+
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+</div>
+
+<!--  <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>The</span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> <span style='border:none'>Laptop</span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> has lost co<span style='border:none'>nnectivity to <span
+style='border:none'>Home Net <span style='border:none'>because<span
+style='border:none'> <span style='border:none'>the Laptop</span></span></span></span></span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> has not been configured with the new SSID name<span style='border:none'>.</span></span></span></span></p> -->
+
+<h3 style="margin-left:0in;text-indent:0in">Step 2: Configure WPA2 security on
+the wireless router.</h3>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Return to the <b>PC</b> and log into the configuration page of the <b>Home
+Net </b>wireless router as needed.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>&nbsp;Select <b>Wireless</b> &gt; <b>Wireless Security</b>.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Change Security Mode to <b>WPA2 Personal</b>. AES is currently the
+strongest encryption protocol available. Leave it selected.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Configure the passphrase as <b>aCompWiFi</b>. Click <b>Save Settings</b>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 3: Configure Laptop as a wireless
+client.</h3>
+
+<p class="BodyTextL25">In this step, you will configure <b>Laptop</b> to connect
+to the wireless network using the security settings you configured on the
+wireless router.</p>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select <b>Laptop</b>. Click <b>Desktop</b> &gt; <b>PC Wireless</b>.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select <b>Profiles</b> &gt; <b>New</b> and add a new profile. Enter a
+profile name of your choice and click <b>OK</b>.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Advanced Setup</b>. Enter the SSID <b>aCompany</b> as Wireless
+Network Name. Click <b>Next</b> to continue.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Accept the default network settings to use DHCP and click <b>Next</b>.</p>
+
+<p class="SubStepAlpha">e.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Modify the Security using the dropdown box to <b>WPA2-Personal </b>and
+select<b> Next</b>.</p>
+
+<p class="SubStepAlpha">f.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Enter the pre-shared key: <b>aCompWiFi</b> and select <b>Next</b>.</p>
+
+<p class="SubStepAlpha">g.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Save</b> to confirm the new settings.</p>
+
+<p class="SubStepAlpha">h.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Connect to Network</b>.</p>
+
+<p class="SubStepAlpha">i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the <b>Laptop</b> does not connect successfully, return to the
+profile and edit. Check your typing of the SSID name and the pre-shared key.</p>
+
+<p class="SubStepAlpha">j.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Close the PC Wireless window when connected.</p>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 4: Configure the Wireless
+Router to support MAC filtering.</h3>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>From the Desktop, click <b>Command Prompt</b>.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>At the prompt, enter <b>ipconfig /all</b> and take note of the IPv4
+address and Physical (MAC) addresses for the Wireless0 Connection.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Return to the <b>PC</b> and log into the configuration page of the <b>Home
+Net </b>wireless router as needed.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Navigate to <b>Wireless</b> &gt; <b>Wireless MAC Filter</b>.</p>
+
+<p class="SubStepAlpha">e.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Under the <b>Access Resolution</b> heading, select <b>Enabled</b> and <b>Permit
+PCs listed below to access wireless network</b>.</p>
+
+<p class="SubStepAlpha">f.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Enter the MAC address for the Wireless0 connection on <b>Laptop</b> in
+the MAC 01: field. Notice the MAC address must be in the XX:XX:XX:XX:XX:XX
+format. Click <b>Save Settings</b> and click <b>Continue</b> to return to the configuration
+page.</p>
+
+<p class="SubStepAlpha">g.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reconnect Laptop to the wireless network. (<b>Laptop</b> &gt; <b>click
+PC Wireless</b> &gt; <b>Profile</b> &gt; select <b>aCompany </b>&gt; click <b>Connect</b>
+if necessary.)</p>
+
+<h3 style="margin-left:0in;text-indent:0in">Step 5: Test the MAC filtering of the
+Wireless Router</h3>
+
+<p class="BodyTextL25">In this step, you will test the MAC filtering by adding a
+second laptop to the network. You will need change out the fast Ethernet network
+interface card to a wireless network interface card.</p>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Add a second laptop to the topology. You will need change out the fast
+Ethernet network interface card to a wireless network interface card.</p>
+
+<p class="BodyTextL50"><b>Note</b>: Do not change the display name of the newly
+added laptop. The name of the device will affect scoring in Packet Tracer.</p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Press the power button on <b>Laptop0</b> to turn it off.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Drag the Ethernet port to the Modules list to remove it.</p>
+
+<p class="SubStepAlpha">d.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Drag the <b>WPC300N</b> module to the empty slot on <b>Laptop0</b> and
+press the power button to start <b>Laptop0</b>.</p>
+
+<h4>Question:</h4>
+
+<p class="BodyTextL50" style="margin-top:0in">Were you unable to associate with
+the access point? If not, explain how you would fix it.</p>
+
+<!-- <p class=AnswerLineL50>Type your answers here.</p> -->
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;">
+			<legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea>
+		</fieldset>
+	</div>
+
+	 <p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+border:none"><span style="border:none">Laptop0 is unable to connect to the wireless router because MAC address of the Laptop is the only one specified, Laptop is the only
+wireless device currently capable of associating with the wireless router. Add the MAC address of Laptop0 to the permit MAC Address filter list.</span></span></span></p>
+
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+</div>
+
+<!--  <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>Laptop<span style='border:none'>0 is <span
+style='border:none'>unable to <span style='border:none'>connect to<span
+style='border:none'> the wireless router<span style='border:none'> b</span></span></span></span></span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'>ecause <span style='border:none'>MAC address</span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> o<span style='border:none'>f the Laptop</span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> is the only one specified, Laptop<span style='border:none'> is the only
+wireless device currently capable of associating <span style='border:none'>with
+the wireless router<span style='border:none'>.</span></span></span></span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'> Add </span></span></span><span class=AnswerGray><span style='
+border:none'><span style='border:none'>the MAC address of Laptop0 to the permit
+<span style='border:none'>MAC <span style='border:none'>Address filter l<span
+style='border:none'>ist.</span></span></span></span></span></span></p> -->
+
+<p class="SubStepAlpha">e.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Configure the new laptop with the security settings in the previous steps
+to connect <b>Laptop0</b> to the network.</p>
+
+<p class="ConfigWindow">End of document</p>
+
+<div class="global-action-container btn__container">
+	<button class="show-all-answers btn-text btn__action">Show All Answers</button>
+	<button class="hide-all-answers btn-text btn__action hidden">Hide All Answers</button>
+	<button class="clear-all-responces btn-text btn__action">Clear My Responses</button>
+</div>
+
+<div id="footerDIV"><span><br>
+		<hr><span style="padding-right:5px;float:left;font-family:arial;font-size:12px;">© 2017 - 2022 Cisco
+			and/or its affiliates. All rights reserved. Cisco Public</span><br></span></div>
+</div>
+
+
+
+<script>
+
+	window.addEventListener('load', function () {
+		console.log('loaded');
+		document.querySelectorAll(".AnswerGray").forEach(function (ele) {
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".hide-answer").forEach(function (ele) {
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".show-answer").forEach(function (ele) {
+			ele.addEventListener("click", function (e) {
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function (ele) {
+					ele.classList.remove("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		document.querySelectorAll(".hide-answer").forEach(function (ele) {
+			ele.addEventListener("click", function (e) {
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function (ele) {
+					ele.classList.add("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		var event = new Event('click', {
+			bubbles: true,
+			cancelable: true,
+		});
+		document.querySelectorAll(".show-all-answers").forEach(function (ele) {
+			ele.addEventListener("click", function (e) {
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				ele.classList.add('hidden');
+				document.querySelectorAll(".show-answer").forEach(function (ele) {
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".hide-all-answers").forEach(function (ele) {
+			ele.addEventListener("click", function (e) {
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				ele.classList.add('hidden');
+				document.querySelectorAll(".hide-answer").forEach(function (ele) {
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".clear-all-responces").forEach(function (ele) {
+			ele.addEventListener("click", function (e) {
+				document.querySelectorAll("textArea").forEach(function (ele) {
+					ele.value = "";
+				})
+			})
+		})
+
+
+
+	})
+</script>
+
+
+
+</body></html>

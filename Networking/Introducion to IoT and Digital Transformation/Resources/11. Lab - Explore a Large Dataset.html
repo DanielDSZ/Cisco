@@ -1,0 +1,599 @@
+
+<!-- saved from url=(0455)https://prod-tf-ui.s3.amazonaws.com/s/ff9e491c-49be-4734-803e-a79e6e83dab1/resources/a7df8322-5e7f-4bf6-b8e8-c7beeb16f0a9/v1/en-US/Explore_a_Large_Dataset.htm?response-cache-control=no-cache&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241018T232832Z&X-Amz-SignedHeaders=host&X-Amz-Expires=30&X-Amz-Credential=AKIAUJZRIEYBKYV2WA5Q%2F20241018%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0959d40f0a050aa711b35a9979217ecd9d2f979b62af846b067746b18311048e -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>Lab - Explore a Large Dataset</title>
+<style>
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	page-break-after:avoid;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:normal;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.PageHead, li.PageHead, div.PageHead
+	{mso-style-name:"Page Head";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.AnswerLineL50, li.AnswerLineL50, div.AnswerLineL50
+	{mso-style-name:"Answer Line L50";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:bold;
+	font-style:italic;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Bulletlevel1, li.Bulletlevel1, div.Bulletlevel1
+	{mso-style-name:"Bullet level 1";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.ConfigWindow, li.ConfigWindow, div.ConfigWindow
+	{mso-style-name:"Config Window";
+	margin:0in;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-style:italic;}
+p.SubStepAlpha, li.SubStepAlpha, div.SubStepAlpha
+	{mso-style-name:"SubStep Alpha";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL50, li.BodyTextL50, div.BodyTextL50
+	{mso-style-name:"Body Text L50";
+	mso-style-link:"Body Text L50 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25, li.BodyTextL25, div.BodyTextL25
+	{mso-style-name:"Body Text L25";
+	mso-style-link:"Body Text L25 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.SubStepNum, li.SubStepNum, div.SubStepNum
+	{mso-style-name:"SubStep Num";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	color:white;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:SimSun;
+	font-weight:bold;}
+span.BodyTextL25Char
+	{mso-style-name:"Body Text L25 Char";
+	mso-style-link:"Body Text L25";}
+span.BodyTextL50Char
+	{mso-style-name:"Body Text L50 Char";
+	mso-style-link:"Body Text L50";}
+span.AnswerGray
+	{mso-style-name:"Answer Gray";
+	font-family:"Arial",sans-serif;
+	/* color:windowtext; */
+	border:none;
+	/* background:#D9D9D9; */
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:76.3pt .75in .9in .75in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+
+/* Add css for textarea */
+
+.AnswerGray{
+	padding: 0.2rem;
+}
+
+.question-action-container{
+	margin-top: 6pt;
+    margin-right: 0in;
+    margin-bottom: 6pt;
+    margin-left: 0.5in;
+}
+
+.show-answer, .hide-answer {
+    padding: 0.5rem 1rem;
+    background-color: #00bceb;
+    color: #fff;
+	border: 0px;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+
+.global-action-container {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.global-action-container .btn__action {
+	margin: 10px;
+}
+.btn__container button.btn__action:not(.is-full-width) {
+	width: calc(50% - .5%);
+}
+.btn-text {
+	border: 0px;
+	padding: 0.5rem 1rem;
+	background-color: #6abf4b;
+	color: #fff;
+	border-radius: 0;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+
+.hidden{
+	display: none;
+}
+
+.dark-theme {
+        color: #fff;
+      }
+      .dark-theme .dark-color {
+        color: #fff !important;
+      }
+      .dark-theme p.ConfigWindow,
+      .dark-theme li.ConfigWindow,
+      .dark-theme div.ConfigWindow {
+        mso-style-name: "Config Window";
+        color: #212328;
+      }
+      .dark-theme h4 {
+        color: #212328;
+      }
+      .dark-theme .MsoTitle span {
+        color: #fff !important;
+      }
+      .dark-theme textarea {
+        background-color: #212328;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer > span {
+        padding: 4px;
+      }
+      .dark-theme .BodyTextL25Answer span {
+        color: #fff;
+      }
+      .dark-theme table tbody tr td {
+        color: #fff !important;
+      }
+      .dark-theme table .TableHeading {
+        color: #000;
+      }
+      .dark-theme .BodyTextL50Answer {
+        background-color: #000;
+        color: #fff;
+    }
+	p.BodyTextL50Answer,
+	li.BodyTextL50Answer,
+	div.BodyTextL50Answer {
+		mso-style-name: "Body Text L50 Answer";
+		mso-style-link: "Body Text L50 Answer Char";
+		margin-top: 6.0pt;
+		margin-right: 0in;
+		margin-bottom: 6.0pt;
+		margin-left: .5in;
+		background: #D9D9D9;
+		font-size: 10.0pt;
+		font-family: "Arial", sans-serif;
+		font-weight: bold;
+	}
+
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="word-wrap:break-word">
+
+<div class="WordSection1">
+
+<p class="MsoTitle">Lab - Explore a Large Dataset</p>
+
+<h1>Objectives</h1>
+
+<p class="BodyTextL25"><span lang="EN">Explore a sample dataset to view the power
+of Big Data.</span></p>
+
+<h1>Background / Scenario</h1>
+
+<p class="BodyTextL25">Before data can become meaningful information, it needs to
+be processed. </p>
+
+<h1>Required Resources</h1>
+
+<p class="Bulletlevel1" style="margin-top:3.0pt;margin-right:0in;margin-bottom:
+3.0pt;margin-left:.5in;line-height:115%"><span style="font-size:7.0pt;
+line-height:115%;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span>Devices with access to the internet</p>
+
+<h1>Instructions</h1>
+
+<h2 style="margin-left:0in;text-indent:0in">Part 1: Locate a large, free,
+searchable database.</h2>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <a href="https://www.nass.usda.gov/Data_and_Statistics/index.php" target="_blank">here</a>
+to access the United States Department of Agriculture Statistics Service
+database. </p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click the Arrow to access the <b>Quick Stats Tools</b>.</p>
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Notice the status in the top right-hand corner. </p>
+
+<h4>Question:</h4>
+
+<p class="BodyTextL50" style="margin-top:0in">How many records are currently in
+the database?</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+	border:none"><span style="border:none">Answers will vary but it should be a
+value greater 34.7 million</span></span></span><span class="AnswerGray hidden"><span style="border:none"><span style="border:none">.</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+	</div>
+
+
+<!-- <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>Answers will vary but it should be a
+value greater 34.7 million</span></span></span><span class=AnswerGray><span
+style='border:none'><span style='border:none'>.</span></span></span></p> -->
+
+<h2 style="margin-left:0in;text-indent:0in">Part 2: Select Categories.</h2>
+
+<p class="SubStepAlpha">a.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>From the categories select:</p>
+
+<p class="BodyTextL50">Program: <b>Census</b></p>
+
+<p class="BodyTextL50">Sector: <b>Animals &amp; Products</b></p>
+
+<p class="BodyTextL50">Group: <b>Poultry</b></p>
+
+<p class="BodyTextL50">Commodity: <b>Ducks</b></p>
+
+<p class="BodyTextL50">Category: <b>Inventory</b></p>
+
+<p class="BodyTextL50">Data Item: <b>Ducks – Inventory</b></p>
+
+<p class="BodyTextL50">Domain: <b>Total</b></p>
+
+<p class="BodyTextL50">Geographic Level: <b>State</b></p>
+
+<p class="BodyTextL50">State: <b>Alaska</b></p>
+
+<p class="SubStepAlpha">b.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Get Data</b> to display the statistics.</p>
+
+<h4>Question:</h4>
+
+<p class="BodyTextL50" style="margin-top:0in">What was the inventory of ducks in
+Alaska in 2012?</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+	border:none"><span style="border:none">226</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+	</div>
+
+
+<!-- <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>226</span></span></span></p> -->
+
+<p class="SubStepAlpha">c.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select the Back button and change the state to Hawaii. Ensure that the
+year is still 2012.</p>
+
+<h4>Question:</h4>
+
+<p class="BodyTextL50">What was the inventory of ducks in Hawaii in 2012?</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+	border:none"><span style="border:none">1,275</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+	</div>
+
+
+<!-- <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>1</span></span></span><span
+class=AnswerGray><span style='border:none'><span style='border:
+none'>,275</span></span></span></p> -->
+
+<p class="BodyTextL50">If you owned a company that required ducks, how would this
+database be of use to the company?</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend>Answer Area</legend><textarea rows="3" name="answerArea" placeholder="Type your answer here." style="border:none;width:100%;"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer"><span class="AnswerGray hidden"><span style="
+	border:none"><span style="border:none">Answers will vary but the database might
+help to find new sources of ducks.</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer">Show Answer</button>
+		<button class="MetroBtn hide-answer hidden">Hide Answer</button>
+	</div>
+	</div>
+
+
+<!-- <p class=BodyTextL50Answer><span class=AnswerGray><span style='
+border:none'><span style='border:none'>Answers will vary but the database might
+help to find new sources of ducks.</span></span></span></p> -->
+
+<p class="ConfigWindow">End of document</p>
+<div class="global-action-container btn__container">
+	<button class="show-all-answers btn-text btn__action">Show All Answers</button>
+	<button class="hide-all-answers btn-text btn__action hidden">Hide All Answers</button>
+	<button class="clear-all-responces btn-text btn__action">Clear My Responses</button>
+</div>
+
+<div id="footerDIV"><span><br><hr><span style="padding-right:5px;float:left;font-family:arial;font-size:12px;">© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public</span><br></span></div>
+
+
+</div>
+<script>
+
+	window.addEventListener('load',function(){
+		console.log('loaded');
+		document.querySelectorAll(".AnswerGray").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".show-answer").forEach(function(ele){
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.remove("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.add("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		var event = new Event('click', {
+			bubbles: true,
+			cancelable: true,
+		});
+		document.querySelectorAll(".show-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".show-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".hide-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".hide-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".clear-all-responces").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				document.querySelectorAll("textArea").forEach(function(ele){
+					ele.value = "";
+				})
+			})
+		})
+
+		
+		
+	})
+	</script>
+
+
+
+</body></html>

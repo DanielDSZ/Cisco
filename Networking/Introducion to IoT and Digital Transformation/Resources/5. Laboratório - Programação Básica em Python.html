@@ -1,0 +1,585 @@
+
+<!-- saved from url=(0456)https://prod-tf-ui.s3.amazonaws.com/s/ff9e491c-49be-4734-803e-a79e6e83dab1/resources/54961ee6-d8a1-4a24-8c68-71ed115e1f02/v1/en-US/Basic_Python_Programming.htm?response-cache-control=no-cache&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241016T100655Z&X-Amz-SignedHeaders=host&X-Amz-Expires=30&X-Amz-Credential=AKIAUJZRIEYBKYV2WA5Q%2F20241016%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=747527934c45ffea2b59197fb1578c5cb5eb178e354ea6035c18f1bea6e19f1d -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title _msttexthash="1400178" _msthash="0">Laboratório - Programação Básica em Python</title>
+<style>
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.PageHead, li.PageHead, div.PageHead
+	{mso-style-name:"Page Head";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Bulletlevel1, li.Bulletlevel1, div.Bulletlevel1
+	{mso-style-name:"Bullet level 1";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.ConfigWindow, li.ConfigWindow, div.ConfigWindow
+	{mso-style-name:"Config Window";
+	margin:0in;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-style:italic;}
+p.SubStepAlpha, li.SubStepAlpha, div.SubStepAlpha
+	{mso-style-name:"SubStep Alpha";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.CMD, li.CMD, div.CMD
+	{mso-style-name:CMD;
+	mso-style-link:"CMD Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Courier New";}
+p.BodyTextL50, li.BodyTextL50, div.BodyTextL50
+	{mso-style-name:"Body Text L50";
+	mso-style-link:"Body Text L50 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25, li.BodyTextL25, div.BodyTextL25
+	{mso-style-name:"Body Text L25";
+	mso-style-link:"Body Text L25 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.LabTitleInstVersred
+	{mso-style-name:"Lab Title Inst Vers \(red\)";
+	font-family:"Arial",sans-serif;
+	color:#EE0000;
+	font-weight:bold;}
+p.SubStepNum, li.SubStepNum, div.SubStepNum
+	{mso-style-name:"SubStep Num";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25Bold, li.BodyTextL25Bold, div.BodyTextL25Bold
+	{mso-style-name:"Body Text L25 Bold";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.CMDChar
+	{mso-style-name:"CMD Char";
+	mso-style-link:CMD;
+	font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:SimSun;
+	font-weight:bold;}
+span.BodyTextL25Char
+	{mso-style-name:"Body Text L25 Char";
+	mso-style-link:"Body Text L25";}
+span.BodyTextL50Char
+	{mso-style-name:"Body Text L50 Char";
+	mso-style-link:"Body Text L50";}
+.MsoChpDefault
+	{font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:76.3pt .75in .9in .75in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+
+	.dark-theme {
+        color: #fff;
+      }
+      .dark-theme .dark-color {
+        color: #fff !important;
+      }
+      .dark-theme p.ConfigWindow,
+      .dark-theme li.ConfigWindow,
+      .dark-theme div.ConfigWindow {
+        mso-style-name: "Config Window";
+        color: #212328;
+      }
+      .dark-theme h4 {
+        color: #212328;
+      }
+      .dark-theme .MsoTitle span {
+        color: #fff !important;
+      }
+      .dark-theme textarea {
+        background-color: #212328;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer > span {
+        padding: 4px;
+      }
+      .dark-theme .BodyTextL25Answer span {
+        color: #fff;
+      }
+      .dark-theme table tbody tr td {
+        color: #fff !important;
+      }
+      .dark-theme table .TableHeading {
+        color: #000;
+      }
+      .dark-theme .BodyTextL50Answer {
+        background-color: #000;
+        color: #fff;
+    }
+
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="word-wrap:break-word">
+
+<div class="WordSection1">
+
+<p class="MsoTitle"><span style="color:#EE0000;font-weight:normal"><b><span style="color:windowtext" _msttexthash="1400178" _msthash="1">Laboratório - Programação Básica em Python</span></b></span></p>
+
+<h1 _msttexthash="159952" _msthash="2">Objectivos</h1>
+
+<p class="BodyTextL25Bold" _msttexthash="911300" _msthash="3">Parte 1: Pratique o básico do Python</p>
+
+<p class="BodyTextL25Bold" _msttexthash="1392508" _msthash="4">Parte 2: Criar um script usando IDLE para Python</p>
+
+<h1 _msttexthash="60281" _msthash="5">Fundo</h1>
+
+<p class="BodyTextL25" _msttexthash="126370049" _msthash="6">Python é uma linguagem de programação que permite uma
+do que outras linguagens de codificação. Python é muito fácil de usar, poderoso,
+e versátil. Tornou-se a linguagem preferida de muitos desenvolvedores de IoT.
+Uma das principais razões para a popularidade do Python é a comunidade de desenvolvedores.
+Os desenvolvedores do Python criaram e disponibilizaram muitos módulos específicos que
+pode ser importado para qualquer programa para fornecer imediatamente funcionalidade adicional.</p>
+
+<h1 _msttexthash="110162" _msthash="7">Cenário</h1>
+
+<p class="BodyTextL25" _msttexthash="13884481" _msthash="8">Neste laboratório, você aprenderá e praticará um pouco de Python básico
+programação. Mais especificamente, você usará o Python versão 3 no laboratório.</p>
+
+<h1 _msttexthash="462397" _msthash="9">Recursos necessários</h1>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="2855411" _msthash="10">Um moderno
+computador pessoal com acesso à Internet e RAM suficiente</font></p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="171080" _msthash="11">Python3 / IDLE3</font></p>
+
+<h1 _msttexthash="208416" _msthash="12">Instruções</h1>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="911300" _msthash="13">Parte 1: Pratique o básico do Python</h2>
+
+<p class="BodyTextL25" _msttexthash="3366597" _msthash="14">Nesta parte, você aprenderá e praticará algumas
+Programação em Python.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="769054" _msthash="15">Passo 1: Baixe e instale o Python3.</h3>
+
+<p class="SubStepAlpha" _msttexthash="6130657" _msthash="16">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Navegue até <a href="http://www.python.org/" target="_blank" _istranslated="1">www.python.org/downloads/</a> e baixe a versão mais recente para o seu sistema operacional.</p>
+
+<p class="SubStepAlpha" _msttexthash="27531088" _msthash="17">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Localize o arquivo baixado e instale o Python. Selecione <b _istranslated="1">Adicionar Python 3.x
+para PATH,</b> onde x é a versão de lançamento. Adicionando Python aos tells PATH
+Windows onde você instalou o Python. Em seguida, clique em <b _istranslated="1">Instalar agora</b>.</p>
+
+<p class="BodyTextL50" _msttexthash="8575658" _msthash="18">Você também pode instalar o Python 3.x usando a Microsoft Store.
+Pesquise Python e selecione a versão mais recente do Python.</p>
+
+<p class="BodyTextL50" _msttexthash="8639553" _msthash="19">Para a maioria das distribuições Linux, o Python já está instalado.
+Para instalar o IDLE no Ubuntu, digite o seguinte comando:</p>
+
+<p class="CMD" _msttexthash="1207466" _msthash="20">user@Ubuntu:~$ <b>sudo apt-get install idle3</b></p>
+
+<p class="BodyTextL50" _msttexthash="2628041" _msthash="21">Para iOS, consulte <a href="https://www.python.org/download/mac/tcltk/" target="_blank" _istranslated="1">https://www.python.org/download/mac/tcltk/</a>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="2059044" _msthash="22">Etapa 2: programação Python no
+intérprete interativo.</h3>
+
+<p class="BodyTextL25" _msttexthash="6010368" _msthash="23">Como uma linguagem interpretada, os comandos Python podem ser emitidos
+em um intérprete interativo.</p>
+
+<p class="BodyTextL25" _msttexthash="3168802" _msthash="24">Nesta atividade, as etapas são escritas para Python3
+rodando no Windows.</p>
+
+<p class="SubStepAlpha" _msttexthash="6172413" _msthash="25">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Inicie o <b _istranslated="1">Python3</b>. (No Windows, clique em <b _istranslated="1">Iniciar</b> &gt; <b _istranslated="1">Python3.x</b> &gt; <b _istranslated="1">Python3</b>, onde x é a versão de lançamento.)</p>
+
+<p class="CMD" _msttexthash="4658095" _msthash="26">Python 3.10.1 (tags/v3.10.1:2cd268a, 6 de dezembro de 2021, 19:10:37) [MSC
+v.1929 64 bits (AMD64)] no win32</p>
+
+<p class="CMD" _msttexthash="5104710" _msthash="27">Digite "ajuda", "direitos autorais", "créditos"
+ou "licença" para obter mais informações.</p>
+
+<p class="CMD">&gt;&gt;&gt;&nbsp;</p>
+
+<p class="SubStepAlpha" _msttexthash="3502434" _msthash="28">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Realize alguns cálculos básicos. Insira os cálculos no Python
+prompt <b _istranslated="1">&gt;&gt;&gt;</b>.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="14781" _msthash="29">1 + 2</b></p>
+
+<p class="CMD" _msttexthash="4641" _msthash="30">3</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="15002" _msthash="31">2 * 4</b></p>
+
+<p class="CMD" _msttexthash="5096" _msthash="32">8</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="15652" _msthash="33">6 / 2</b></p>
+
+<p class="CMD" _msttexthash="15041" _msthash="34">3.0</p>
+
+<p class="SubStepAlpha" _msttexthash="681135" _msthash="35">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Imprima uma string de texto.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="308711" _msthash="36">"Como você está?"</b></p>
+
+<p class="CMD" _msttexthash="308711" _msthash="37">"Como você está?"</p>
+
+<p class="SubStepAlpha" _msttexthash="6277180" _msthash="38">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Use o comando type() para determinar o tipo de dados básico: integer (int),
+float, string (str) e booleano.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="79573" _msthash="39">tipo(65)</b></p>
+
+<p class="CMD" _msttexthash="192985" _msthash="40">&lt;classe 'int'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="96317" _msthash="41">Tipo(45.6)</b></p>
+
+<p class="CMD" _msttexthash="235287" _msthash="42">&lt;Classe 'Float'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="115427" _msthash="43">type("Oi!")</b></p>
+
+<p class="CMD" _msttexthash="195741" _msthash="44">&lt;classe 'str'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="136981" _msthash="45">type(True)</b></p>
+
+<p class="CMD" _msttexthash="207740" _msthash="46">&lt;Classe 'Bool'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="16549" _msthash="47">1&lt;2</b></p>
+
+<p class="CMD" _msttexthash="155636" _msthash="48">Verdadeiro</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="16432" _msthash="49">1&lt;1</b></p>
+
+<p class="CMD" _msttexthash="59917" _msthash="50">Falso</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="24310" _msthash="51">1 == 1</b></p>
+
+<p class="CMD" _msttexthash="155636" _msthash="52">Verdadeiro</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="24414" _msthash="53">1&gt;=1</b></p>
+
+<p class="CMD" _msttexthash="155636" _msthash="54">Verdadeiro</p>
+
+<p class="SubStepAlpha" _msttexthash="390767" _msthash="55">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Crie uma variável.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="23231" _msthash="56">x=3</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="21489" _msthash="57">x*5</b></p>
+
+<p class="CMD" _msttexthash="9971" _msthash="58">15</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="76076" _msthash="59">"Bom!" *x</b></p>
+
+<p class="CMD" _msttexthash="179673" _msthash="60">'Bom! Bom! Bom!'</p>
+
+<p class="SubStepAlpha" _msttexthash="3709238" _msthash="61">f.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Combine várias cadeias de caracteres e imprima como uma cadeia de caracteres.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="162201" _msthash="62">str1="Cisco"</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="136656" _msthash="63">str2="Rede"</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="233506" _msthash="64">str3="Academia"</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="120341" _msthash="65">espaço=" "</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="1090713" _msthash="66">print(str1+espaço+str2+espaço+str3)</b></p>
+
+<p class="CMD" _msttexthash="465335" _msthash="67">Academia de rede da Cisco</p>
+
+<p class="SubStepAlpha" _msttexthash="2451436" _msthash="68">g.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Converta o tipo de dados de um número numérico em uma string.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="23465" _msthash="69">x=5</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="64623" _msthash="70">str(x)</b></p>
+
+<p class="CMD" _msttexthash="1714557" _msthash="71">‘5’</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="36309" _msthash="72">y=4,2</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="64766" _msthash="73">str(y)</b></p>
+
+<p class="CMD" _msttexthash="1939977" _msthash="74">‘4.2’</p>
+
+<p class="SubStepAlpha" style="page-break-after:avoid" _msttexthash="6809530" _msthash="75">h.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Observe que os números inteiros não são arredondados para cima ao converter de float. O
+decimal é ignorado.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="80314" _msthash="76">int(8.21)</b></p>
+
+<p class="CMD" _msttexthash="5096" _msthash="77">8</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="82953" _msthash="78">int(8.99)</b></p>
+
+<p class="CMD" _msttexthash="5096" _msthash="79">8</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="253851" _msthash="80">int(8.21) + int(8.99)</b></p>
+
+<p class="CMD" _msttexthash="10075" _msthash="81">16</p>
+
+<p class="SubStepAlpha" _msttexthash="820222" _msthash="82">i.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Converta um inteiro em um float.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="23465" _msthash="83">x=5</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="10920" _msthash="84">x</b></p>
+
+<p class="CMD" _msttexthash="4823" _msthash="85">5</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="184912" _msthash="86">flutuador (x)</b></p>
+
+<p class="CMD" _msttexthash="15223" _msthash="87">5.0</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="80379" _msthash="88">tipo(x)</b></p>
+
+<p class="CMD" _msttexthash="192985" _msthash="89">&lt;classe 'int'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="182156" _msthash="90">x = flutuar (x)</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="80379" _msthash="91">tipo(x)</b></p>
+
+<p class="CMD" _msttexthash="235287" _msthash="92">&lt;Classe 'Float'&gt;</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="10920" _msthash="93">x</b></p>
+
+<p class="CMD" _msttexthash="15223" _msthash="94">5.0</p>
+
+<p class="SubStepAlpha" _msttexthash="763087" _msthash="95">j.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Obtenha a entrada do usuário.</p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="723944" _msthash="96">nome=input("Qual é o seu nome? ")</b></p>
+
+<p class="CMD" _msttexthash="387803" _msthash="97">Qual é o seu nome? <b _istranslated="1">John</b></p>
+
+<p class="CMD">&gt;&gt;&gt; <b _msttexthash="1237561" _msthash="98">print("Oi " + nome + ", é bom
+para conhecê-lo!")</b></p>
+
+<p class="CMD" _msttexthash="752089" _msthash="99">Oi John, é um prazer conhecê-lo!</p>
+
+<p class="SubStepAlpha" _msttexthash="1762020" _msthash="100">k.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Use <b _istranslated="1">quit()</b> para sair do interpretador interativo.</p>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="1392508" _msthash="101">Parte 2: Criar um script usando IDLE
+para Python</h2>
+
+<p class="BodyTextL25" _msttexthash="29421197" _msthash="102">Nesta parte, você iniciará o IDLE e criará um script simples.
+IDLE significa Desenvolvimento Integrado e Ambiente de Aprendizagem. É
+suportado e incluído no pacote Python. Alguns dos principais recursos do IDLE para
+Python inclui estes:</p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="5499741" _msthash="103">Um shell Python
+(interpretador interativo) com coloração de entrada, saída e
+mensagens de erro.</font></p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="14502449" _msthash="104">Uma janela múltipla
+editor de texto com desfazer múltiplo, coloração Python, recuo inteligente, dicas de chamada,
+preenchimento automático e outros recursos.</font></p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="6841536" _msthash="105">A capacidade de
+pesquise em qualquer janela, substitua nas janelas do editor e pesquise por
+vários arquivos.</font></p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="6615492" _msthash="106">Um depurador com
+pontos de interrupção persistentes, revisão e exibição de namespaces globais e locais.</font></p>
+
+<p class="Bulletlevel1"><span style="font-size:7.0pt;font-family:Webdings">=<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><font _mstmutation="1" _msttexthash="1961921" _msthash="107">Configuração
+navegadores e outras caixas de diálogo.</font></p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="336804" _msthash="108">Etapa 1: inicie o IDLE.</h3>
+
+<p class="SubStepAlpha" _msttexthash="1136200" _msthash="109">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Inicie o <b _istranslated="1">IDLE</b> no menu Iniciar do Windows.</p>
+
+<p class="SubStepAlpha" _msttexthash="3712449" _msthash="110">Clique<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>em <b _istranslated="1">Arquivo</b> &gt; <b _istranslated="1">Novo Arquivo</b> para abrir um novo Python (sem título)
+roteiro.</p>
+
+<p class="SubStepAlpha" _msttexthash="11704654" _msthash="111">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No novo arquivo, digite <b _istranslated="1">print("Hello World!")</b>, observe que os códigos
+são coloridos e os parênteses abertos e fechados são correspondentes.</p>
+
+<p class="SubStepAlpha" _msttexthash="11104314" _msthash="112"><span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique em <b _istranslated="1">Arquivo</b> &gt; <b _istranslated="1">Salvar</b>, salve o script atual como <b _istranslated="1">1.p</b>y
+no diretório Documentos (C:/Usuários/seu nome/Documentos). Clique no botão <b _istranslated="1">Salvar</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="5162768" _msthash="113">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique em <b _istranslated="1">Executar</b> &gt; <b _istranslated="1">Executar Módulo</b> (ou pressione F5). A janela do shell
+exibirá o resultado.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="805038" _msthash="114">Passo 2: Crie seu próprio script.</h3>
+
+<p class="BodyTextL25" _msttexthash="13216840" _msthash="115">Você pode não saber como criar um script Python complexo em
+o seu próprio. Mas você pode criar um script Python simples usando os exemplos no
+parte anterior.</p>
+
+<p class="BodyTextL25" _msttexthash="21337888" _msthash="116">Por exemplo, crie e salve o novo arquivo conforme 2.py em seu
+Diretório de documentos. Digite <b _istranslated="1">print(1+1)</b> no novo arquivo e salve-o novamente.
+Execute o módulo e imprima os resultados de 1+1 e exiba no shell.</p>
+
+<p class="BodyTextL25" _msttexthash="7010302" _msthash="117">Experimente diferentes funções e você estará em
+sua maneira de usar uma linguagem de programação poderosa.</p>
+
+<p class="ConfigWindow" _msttexthash="262353" _msthash="118">Fim do documento</p>
+
+<div id="footerDIV"><span><br><hr><span style="padding-right:5px;float:left;font-family:arial;font-size:12px;" _msttexthash="4231357" _msthash="119">© 2017 - 2022 Cisco e/ou suas afiliadas. Todos os direitos reservados. Público da Cisco</span><br></span></div>
+
+
+</div>
+
+
+
+
+</body></html>

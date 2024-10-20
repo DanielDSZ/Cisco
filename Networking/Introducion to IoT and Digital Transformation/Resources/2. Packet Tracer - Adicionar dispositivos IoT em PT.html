@@ -1,0 +1,685 @@
+
+<!-- saved from url=(0464)https://prod-tf-ui.s3.amazonaws.com/s/ff9e491c-49be-4734-803e-a79e6e83dab1/resources/a09a78d7-0dbc-4c7e-b804-df8e19b12b20/v1/en-US/Add_IoT_Devices_in_Packet_Tracer.htm?response-cache-control=no-cache&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241011T002706Z&X-Amz-SignedHeaders=host&X-Amz-Expires=30&X-Amz-Credential=AKIAUJZRIEYBKYV2WA5Q%2F20241011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ffda265cff18e32bf3dbabaa0f814d6c81f88ba82925afaa109df37c6c518611 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title _msttexthash="1459497" _msthash="0">Packet Tracer - Adicionar dispositivos IoT em PT</title>
+<style>
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.PageHead, li.PageHead, div.PageHead
+	{mso-style-name:"Page Head";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.AnswerLineL50, li.AnswerLineL50, div.AnswerLineL50
+	{mso-style-name:"Answer Line L50";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:bold;
+	font-style:italic;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.ConfigWindow, li.ConfigWindow, div.ConfigWindow
+	{mso-style-name:"Config Window";
+	margin:0in;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-style:italic;}
+p.SubStepAlpha, li.SubStepAlpha, div.SubStepAlpha
+	{mso-style-name:"SubStep Alpha";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL50, li.BodyTextL50, div.BodyTextL50
+	{mso-style-name:"Body Text L50";
+	mso-style-link:"Body Text L50 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25, li.BodyTextL25, div.BodyTextL25
+	{mso-style-name:"Body Text L25";
+	mso-style-link:"Body Text L25 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.LabTitleInstVersred
+	{mso-style-name:"Lab Title Inst Vers \(red\)";
+	font-family:"Arial",sans-serif;
+	color:#EE0000;
+	font-weight:bold;}
+p.SubStepNum, li.SubStepNum, div.SubStepNum
+	{mso-style-name:"SubStep Num";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25Bold, li.BodyTextL25Bold, div.BodyTextL25Bold
+	{mso-style-name:"Body Text L25 Bold";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:SimSun;
+	font-weight:bold;}
+span.BodyTextL25Char
+	{mso-style-name:"Body Text L25 Char";
+	mso-style-link:"Body Text L25";}
+span.BodyTextL50Char
+	{mso-style-name:"Body Text L50 Char";
+	mso-style-link:"Body Text L50";}
+span.AnswerGray
+	{mso-style-name:"Answer Gray";
+	font-family:"Arial",sans-serif;
+	border:none;
+	font-weight:bold;}
+span.DnTbold
+	{mso-style-name:"DnT bold";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.DnTnobold
+	{mso-style-name:"DnT no bold";}
+.MsoChpDefault
+	{font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:76.3pt .75in .9in .75in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+	.AnswerGray{
+	padding: 0.2rem;
+}
+
+.question-action-container{
+	margin-top: 6pt;
+    margin-right: 0in;
+    margin-bottom: 6pt;
+    margin-left: 0.5in;
+}
+
+.show-answer, .hide-answer {
+    padding: 0.5rem 1rem;
+    background-color: #00bceb;
+    color: #fff;
+	border: 0px;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+
+.global-action-container {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.global-action-container .btn__action {
+	margin: 10px;
+}
+.btn__container button.btn__action:not(.is-full-width) {
+	width: calc(50% - .5%);
+}
+.btn-text {
+	border: 0px;
+	padding: 0.5rem 1rem;
+	background-color: #6abf4b;
+	color: #fff;
+	border-radius: 0;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+p.BodyTextL50Answer,
+        li.BodyTextL50Answer,
+        div.BodyTextL50Answer {
+            mso-style-name: "Body Text L50 Answer";
+            mso-style-link: "Body Text L50 Answer Char";
+            margin-top: 6.0pt;
+            margin-left: .5in;
+            margin-bottom: 6.0pt;
+            margin-right: .5in;
+            background: #D9D9D9;
+            font-size: 10.0pt;
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+        }
+
+.hidden{
+	display: none;
+}
+
+.dark-theme {
+        color: #fff;
+      }
+      .dark-theme .dark-color {
+        color: #fff !important;
+      }
+      .dark-theme p.ConfigWindow,
+      .dark-theme li.ConfigWindow,
+      .dark-theme div.ConfigWindow {
+        mso-style-name: "Config Window";
+        color: #212328;
+      }
+      .dark-theme h4 {
+        color: #212328;
+      }
+      .dark-theme .MsoTitle span {
+        color: #fff !important;
+      }
+      .dark-theme textarea {
+        background-color: #212328;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer {
+        background-color: #000;
+        color: #fff;
+      }
+	  .dark-theme .BodyTextL50Answer {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer > span {
+        padding: 4px;
+      }
+      .dark-theme .BodyTextL25Answer span {
+        color: #fff;
+      }
+      .dark-theme table tbody tr td {
+        color: #fff !important;
+      }
+      .dark-theme table .TableHeading {
+        color: #000;
+      }
+</style>
+
+</head>
+
+<body lang="EN-US" style="word-wrap:break-word">
+
+<div class="WordSection1">
+
+<p class="MsoTitle"><span style="color:#EE0000;font-weight:normal"><b><span style="color:windowtext" _msttexthash="1459497" _msthash="1">Packet Tracer - Adicionar dispositivos IoT em PT</span></b></span></p>
+
+<h1 style="text-align:justify" _msttexthash="159952" _msthash="2">Objectivos</h1>
+
+<p class="BodyTextL25Bold" _msttexthash="2066714" _msthash="3">Parte 1: Explore a rede doméstica inteligente existente</p>
+
+<p class="BodyTextL25Bold" _msttexthash="2757469" _msthash="4">Parte 2: Adicionar dispositivos IoT sem fio à casa inteligente
+Rede </p>
+
+<p class="BodyTextL25Bold" _msttexthash="2754791" _msthash="5">Parte 3: Adicionar dispositivos IoT com fio à casa inteligente
+Rede</p>
+
+<h1 style="text-align:justify" _msttexthash="466609" _msthash="6">Antecedentes / Cenário</h1>
+
+<p class="BodyTextL25" _msttexthash="16262701" _msthash="7">Nesta atividade, você abrirá um arquivo Packet Tracer com
+uma rede doméstica existente, explore os dispositivos na rede e adicione
+dispositivos IoT adicionais com e sem fio.</p>
+
+<h1 style="text-align:justify" _msttexthash="208416" _msthash="8">Instruções</h1>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="1637025" _msthash="9">Parte 1: Explore o Smart existente
+Rede doméstica</h2>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="2587091" _msthash="10">Etapa 1: Explorar a extremidade de IoT disponível
+Dispositivos.</h3>
+
+<p class="SubStepAlpha" _msttexthash="17703790" _msthash="11">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No canto inferior esquerdo da janela do Packet Tracer, localize e clique em
+o ícone <b _istranslated="1">Dispositivos finais</b> (Ctrl + Alt + V) na linha superior e o ícone <span class="DnTbold" _istranslated="1">Início</span> (Ctrl + Alt + H) na linha inferior.</p>
+
+<p class="SubStepAlpha" _msttexthash="8758100" _msthash="12">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>A caixa <span class="DnTbold" _istranslated="1">Seleção específica do dispositivo</span> é exibida
+os muitos dispositivos IoT domésticos inteligentes disponíveis.</p>
+
+<p class="SubStepAlpha" style="text-indent:0in" _msttexthash="26756899" _msthash="13">Mova o ponteiro do mouse sobre cada um
+dispositivo e observe que o nome descritivo do dispositivo é exibido no
+parte inferior da caixa <span class="DnTbold" _istranslated="1">Seleção específica do dispositivo</span>. Tome um
+momento de olhar para cada tipo de dispositivo.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1102413" _msthash="14">Etapa 2: explore a casa inteligente
+rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="15249338" _msthash="15"><span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No espaço de trabalho <b _istranslated="1">lógico</b> há uma rede doméstica inteligente pré-criada que
+consiste em muitos dispositivos IoT com e sem fio e infraestrutura de rede
+Dispositivos.</p>
+
+<p class="SubStepAlpha" style="text-indent:0in" _msttexthash="14564758" _msthash="16">Quando você coloca o cursor sobre um
+dispositivo, como o <b _istranslated="1">Smart Fan</b>, uma janela informativa é aberta contendo
+informações básicas de rede sobre esse dispositivo.</p>
+
+<p class="SubStepAlpha" _msttexthash="24091496" _msthash="17"><span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Para ligar ou ativar um dispositivo, mantenha pressionada a tecla <b _istranslated="1">Alt</b> e, em seguida,
+Clique no dispositivo que deseja testar. Experimente isso em cada um dos dispositivos inteligentes para
+observe o que eles fazem.</p>
+
+<p class="SubStepAlpha" _msttexthash="7915570" _msthash="18">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no <span class="DnTbold" _istranslated="1">Home Gateway</span>. A guia <b _istranslated="1">Físico</b> é selecionada por padrão e mostra uma imagem da <span class="DnTnobold" _istranslated="1">página inicial
+Porta de entrada</span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="6816511" _msthash="19">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique na guia <b _istranslated="1">Config </b>e, no painel esquerdo, clique em <b _istranslated="1">LAN</b> para exibir as configurações de LAN do <span class="DnTnobold" _istranslated="1">Home Gateway</span>.</p>
+
+<p class="SubStepAlpha" style="text-indent:0in" _msttexthash="2212990" _msthash="20">Registre o endereço IP da casa
+rede para referência futura.</p>
+
+<div class="question-container">
+<div class="AnswerLineL50">
+	<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend _msttexthash="272584" _msthash="21">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="22"></textarea></fieldset>
+</div>
+
+<p class="BodyTextL50Answer" _msthidden="1"><span class="AnswerGray hidden" _msthidden="1"><span style="
+border:none"><span style="border:none" _msttexthash="97890" _msthidden="1" _msthash="23">192.168.25.1</span></span></span></p>
+
+<div class="question-action-container">
+	<button class="MetroBtn show-answer" _msttexthash="297921" _msthash="24">Mostrar resposta</button>
+	<button class="MetroBtn hide-answer hidden" _msttexthash="153257" _msthidden="1" _msthash="25">Hide Answer</button>
+</div>
+</div>
+
+
+<p class="SubStepAlpha" _msttexthash="3252236" _msthash="26">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique em <b _istranslated="1">Wireless </b>no painel esquerdo. Expanda a janela, se necessário.</p>
+
+<p class="BodyTextL50" _msttexthash="828126" _msthash="27">Registre o SSID da rede doméstica.</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend _msttexthash="272584" _msthash="28">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="29"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer" _msthidden="1"><span class="AnswerGray hidden" _msthidden="1"><span style="
+	border:none"><span style="border:none" _msttexthash="177372" _msthidden="1" _msthash="30">HomeGateway</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer" _msttexthash="297921" _msthash="31">Mostrar resposta</button>
+		<button class="MetroBtn hide-answer hidden" _msttexthash="153257" _msthidden="1" _msthash="32">Hide Answer</button>
+	</div>
+	</div>
+
+
+<p class="BodyTextL50" _msttexthash="454766" _msthash="33">Registre a senha WPA2-PSK.</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend _msttexthash="272584" _msthash="34">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="35"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer" _msthidden="1"><span class="AnswerGray hidden" _msthidden="1"><span style="
+	border:none"><span style="border:none" _msttexthash="177840" _msthidden="1" _msthash="36">mySecretKey</span></span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer" _msttexthash="297921" _msthash="37">Mostrar resposta</button>
+		<button class="MetroBtn hide-answer hidden" _msttexthash="153257" _msthidden="1" _msthash="38">Hide Answer</button>
+	</div>
+	</div>
+
+
+<p class="SubStepAlpha" _msttexthash="4820387" _msthash="39">f.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no dispositivo <b _istranslated="1">tablet</b> e, em seguida, clique na guia <b _istranslated="1">Área de trabalho</b> &gt; <b _istranslated="1">Web
+Navegador</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="4409717" _msthash="40">g.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No campo <b _istranslated="1">URL</b>, insira o endereço IP que você registrou para o <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Home Gateway</b></span> e clique em <b _istranslated="1">Ir</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="3381027" _msthash="41">h.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Digite <b _istranslated="1">admin</b> para o nome de usuário e a senha e, em seguida,
+clique em <b _istranslated="1">Enviar</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="56440475" _msthash="42"><span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Uma lista de todos os dispositivos IoT conectados é exibida. Clique em um dispositivo na
+lista para ver seu status e configurações. Tente interagir com alguns dos dispositivos
+para ver como você pode gerenciar seus estados a partir do <b _istranslated="1">Tablet</b>. Por exemplo
+abra e feche a <b _istranslated="1">porta da garagem</b>, ligue e desligue o <b _istranslated="1">Smart Lamp</b>,
+e assim por diante.</p>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="3356405" _msthash="43">Parte 2: Adicionar dispositivos IoT sem fio a
+a rede doméstica inteligente</h2>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1536795" _msthash="44">Etapa 1: Adicionar um dispositivo sem fio a
+a rede.</h3>
+
+<p class="SubStepAlpha"><font _mstmutation="1" _msttexthash="23334545" _msthash="45">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _mstmutation="1" _istranslated="1"> </span>No <strong _mstmutation="1" _istranslated="1"><span style="font-family:&quot;Arial&quot;,sans-serif" _istranslated="1">Dispositivo Específico
+Seleção</span></strong>, clique no ícone <b _mstmutation="1" _istranslated="1">Detector de vento</b> e, em seguida,
+clique na área de trabalho onde deseja localizar o <b _mstmutation="1" _istranslated="1">Detector de vento</b>.
+(Clique em <b _mstmutation="1" _istranslated="1">Dispositivos finais</b> &gt; <b _mstmutation="1" _istranslated="1">Detector de vento</b> <b _mstmutation="1" _istranslated="1">&gt; Home</b></font>)</p>
+
+<p class="SubStepAlpha" _msttexthash="4189159" _msthash="46">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Para configurar o <b _istranslated="1">Detector de Vento</b>, clique nele e, em seguida, clique na guia <b _istranslated="1">Config</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="1698684" _msthash="47">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Altere o nome de exibição para <span class="DnTbold" _istranslated="1">Detector de vento</span>.</p>
+
+<p class="BodyTextL50" _msttexthash="5749770" _msthash="48"><b _istranslated="1">Nota</b>: Para pontuar corretamente, o Nome de Exibição deve
+ser o mesmo que indicado nas instruções.</p>
+
+<p class="SubStepAlpha" _msttexthash="3140358" _msthash="49">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No painel inferior, altere o <b _istranslated="1">Servidor IoT</b> para <span class="DnTbold" _istranslated="1">Início
+Porta de entrada</span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="13525746" _msthash="50">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique em <b _istranslated="1">Wireless0</b> no painel esquerdo. Alterar o tipo de autenticação
+para <b _istranslated="1">WPA2-PSK</b> e na caixa <b _istranslated="1">Frase secreta PSK</b>, digite a senha
+registrado na parte anterior.</p>
+
+<p class="BodyTextL50" _msttexthash="10989732" _msthash="51">Em alguns segundos, uma conexão sem fio deve ser formada
+entre o <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Detector de Vento</b></span> e o <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Home Gateway</b></span>. Você pode fechar a janela <b _istranslated="1">do Detector de Vento</b>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1797575" _msthash="52">Passo 2: Verifique se o <span class="DnTnobold" _istranslated="1">Detector de Vento</span> está na rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="325949" _msthash="53">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no <b _istranslated="1">tablet</b>. </p>
+
+<p class="SubStepAlpha" _msttexthash="1924949" _msthash="54">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Se necessário, faça login novamente no <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Home Gateway</b></span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="16812133" _msthash="55">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>O dispositivo <span class="DnTbold" _istranslated="1">Detector de vento</span> agora aparece no nível de
+na parte inferior da lista de <span class="DnTbold" _istranslated="1">IoT Server – Dispositivos</span>.</p>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="3353727" _msthash="56">Parte 3: Adicionar dispositivos IoT com fio a
+a rede doméstica inteligente</h2>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1064024" _msthash="57">Etapa 1: conecte um dispositivo ao
+rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="21073858" _msthash="58">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No <strong _istranslated="1"><span style="font-family:&quot;Arial&quot;,sans-serif" _istranslated="1">Dispositivo Específico
+Caixa de seleção</span></strong>, clique em <b _istranslated="1">Aspersor de Gramado</b> (<b _istranslated="1">Dispositivos Finais </b>&gt; <span class="DnTbold" _istranslated="1">Aspersor de Gramado</span> <b _istranslated="1">&gt; Doméstico</b>) e clique em
+o espaço de trabalho onde você gostaria de colocá-lo. </p>
+
+<p class="SubStepAlpha" _msttexthash="8631415" _msthash="59">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no <span class="DnTbold" _istranslated="1">aspersor de gramado</span> e, em seguida, clique em <b _istranslated="1">Avançado</b> no canto inferior direito. Mais guias estão disponíveis.</p>
+
+<p class="SubStepAlpha" _msttexthash="983541" _msthash="60">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique na guia <b _istranslated="1">Configuração de E/S</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="5497219" _msthash="61">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No menu suspenso do Adaptador de Rede, altere-o para <b _istranslated="1">PT-IOT-NM-1CFE</b> para uma conexão FastEthernet.</p>
+
+<p class="SubStepAlpha" _msttexthash="1919866" _msthash="62">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Conecte o <b _istranslated="1">aspersor de gramado</b> à <span class="DnTnobold" _istranslated="1"><b _istranslated="1">casa
+Porta de entrada</b></span>.</p>
+
+<p class="SubStepAlpha" style="text-indent:0in" _msttexthash="78220532" _msthash="63">Na caixa <b _istranslated="1">Seleção de tipo de dispositivo</b>, clique no ícone <b _istranslated="1">Conexões </b>(parece um raio).
+Clique no ícone do tipo de conector <b _istranslated="1">Copper Straight Through</b> na caixa <strong _istranslated="1"><span style="font-family:&quot;Arial&quot;,sans-serif" _istranslated="1">Seleção específica do dispositivo</span></strong> e, em seguida, clique no ícone <span class="DnTbold" _istranslated="1">Lawn Sprinkler</span> e
+conecte-o à interface <b _istranslated="1">FastEthernet0</b>. Em seguida, clique no ícone <span class="DnTbold" _istranslated="1">Home Gateway</span> e conecte a outra extremidade do cabo
+para uma interface <b _istranslated="1">Ethernet</b> disponível.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="2743208" _msthash="64">Etapa 2: configure o <span class="DnTnobold" _istranslated="1">aspersor de gramado</span> para conectividade de rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="7478861" _msthash="65">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Na janela <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Aspersor de grama</b></span>, clique em
+a guia <b _istranslated="1">Config</b> para editar as definições de configuração do dispositivo.</p>
+
+<p class="SubStepAlpha" _msttexthash="1628666" _msthash="66">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Defina o nome de exibição como <span class="DnTbold" _istranslated="1">Smart Sprinkler</span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="1143376" _msthash="67">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Defina o <b _istranslated="1">servidor IoT</b> como <span class="DnTbold" _istranslated="1">Home Gateway</span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="5697549" _msthash="68">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No painel esquerdo, clique em <b _istranslated="1">FastEthernet0</b> e, em seguida, clique em <b _istranslated="1">DHCP</b> para a <b _istranslated="1">configuração de IP</b>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1961479" _msthash="69">Etapa 3: verifique se o <span class="DnTnobold" _istranslated="1">aspersor de gramado</span> está na rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="325949" _msthash="70">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no <b _istranslated="1">tablet</b>. </p>
+
+<p class="SubStepAlpha" _msttexthash="1924949" _msthash="71">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Se necessário, faça login novamente no <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Home Gateway</b></span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="16560830" _msthash="72">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>O dispositivo <span class="DnTbold" _istranslated="1">Smart Sprinkler</span> agora aparece no nível de
+na parte inferior da lista de <b _istranslated="1">IoT Server – Dispositivos</b>.</p>
+
+<p class="BodyTextL50" _msttexthash="2885220" _msthash="73"><b _istranslated="1">Nota</b>: Pode levar alguns segundos para <b _istranslated="1">o Smart
+Sprinkler</b> a ser listado. </p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1405560" _msthash="74">Passo 4: Adicione um monitor de nível de água.</h3>
+
+<p class="SubStepAlpha" _msttexthash="21064407" _msthash="75">a.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>No <strong _istranslated="1"><span style="font-family:&quot;Arial&quot;,sans-serif" _istranslated="1">Dispositivo Específico
+Seleção</span></strong>, clique no Monitor de <b _istranslated="1">Nível de Água</b> (<b _istranslated="1">Fim
+Dispositivos </b>&gt; <b _istranslated="1">Home </b>&gt; <span class="DnTbold" _istranslated="1">Monitor de Nível de Água</span>),
+e, em seguida, clique na área de trabalho onde você gostaria de colocá-lo.</p>
+
+<p class="SubStepAlpha" _msttexthash="4894500" _msthash="76">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique no <span class="DnTbold" _istranslated="1">Monitor de Nível de Água</span> e, em seguida, clique em <b _istranslated="1">Avançado</b> para exibir mais guias.</p>
+
+<p class="SubStepAlpha" _msttexthash="2957994" _msthash="77">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique na guia <b _istranslated="1">Config</b> e altere a <span class="DnTbold" _istranslated="1">exibição
+Nome</span> para <span class="DnTbold" _istranslated="1">medidor de água</span>. </p>
+
+<p class="SubStepAlpha" _msttexthash="1143467" _msthash="78">d.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Defina o <b _istranslated="1">servidor IoT</b> como <span class="DnTbold" _istranslated="1">Home Gateway</span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="4289974" _msthash="79">e.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique em <b _istranslated="1">Wireless0</b> e verifique se o <b _istranslated="1">hidrômetro</b> está usando o <span class="DnTbold" _istranslated="1">HomeGateway</span> como SSID.</p>
+
+<p class="SubStepAlpha" _msttexthash="843739" _msthash="80">f.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Configure <span class="DnTbold" _istranslated="1">a senha da rede sem fio</span>. </p>
+
+<p class="SubStepAlpha" _msttexthash="5249803" _msthash="81">g.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Verifique se ele está configurado para receber um endereço IP do DHCP
+servidor no <b _istranslated="1">Home Gateway</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="3617224" _msthash="82">h.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Clique na guia <b _istranslated="1">Configuração de E/S</b> e altere o número de<b _istranslated="1"> slots digitais</b> para 1. </p>
+
+<p class="SubStepAlpha" _msttexthash="1967797" _msthash="83">i.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Para a configuração <b _istranslated="1">de Uso</b>, altere-a para <b _istranslated="1">Componente</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="1606618" _msthash="84">j.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Conecte o <b _istranslated="1">hidrômetro</b> ao <b _istranslated="1">aspersor inteligente</b>. </p>
+
+<p class="SubStepAlpha" style="text-indent:0in" _msttexthash="41452047" _msthash="85">Clique em <b _istranslated="1">Conexões</b> no <b _istranslated="1">tipo de dispositivo
+Caixa de seleção</b> e clique no <b _istranslated="1">cabo personalizado de IoT</b> na caixa <strong _istranslated="1"><span style="font-family:&quot;Arial&quot;,sans-serif" _istranslated="1">Seleção específica do dispositivo</span></strong>. Clique no <span class="DnTbold" _istranslated="1">aspersor inteligente</span> e conecte uma extremidade
+do cabo para a interface <b _istranslated="1">D0</b>. Clique no <span class="DnTbold" _istranslated="1">botão Água
+Meça</span> e conecte o cabo à interface <b _istranslated="1">D0</b>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1532466" _msthash="86">Passo 5: Verifique se o <span class="DnTnobold" _istranslated="1">hidrômetro</span> está na rede.</h3>
+
+<p class="SubStepAlpha" _msttexthash="3213457" _msthash="87">Clique no <b _istranslated="1">Smartphone</b> e, em seguida,<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>na guia <b _istranslated="1">Área de Trabalho</b> &gt; <b _istranslated="1">Web
+Navegador</b>.</p>
+
+<p class="SubStepAlpha" _msttexthash="624858" _msthash="88">b.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>Faça login no <span class="DnTnobold" _istranslated="1"><b _istranslated="1">Home Gateway</b></span>.</p>
+
+<p class="SubStepAlpha" _msttexthash="16348826" _msthash="89">c.<span style="font:7.0pt &quot;Times New Roman&quot;" _istranslated="1"> </span>O dispositivo <span class="DnTbold" _istranslated="1">Medidor de água</span> agora aparece no nível de
+na parte inferior da lista de <b _istranslated="1">IoT Server – Dispositivos</b>.</p>
+
+<h3 style="margin-left:0in;text-indent:0in" _msttexthash="1293396" _msthash="90">Etapa 6: adicionar outros dispositivos IoT.</h3>
+
+<p class="BodyTextL25" _msttexthash="5326971" _msthash="91">Experimente adicionar outros tipos de dispositivos IoT ao
+rede sem fio doméstica inteligente.</p>
+
+<p class="ConfigWindow" _msttexthash="262353" _msthash="92">Fim do documento</p>
+
+<div class="global-action-container btn__container">
+	<button class="show-all-answers btn-text btn__action" _msttexthash="587210" _msthash="93">Mostrar todas as respostas</button>
+	<button class="hide-all-answers btn-text btn__action hidden" _msttexthash="251888" _msthidden="1" _msthash="94">Hide All Answers</button>
+	<button class="clear-all-responces btn-text btn__action" _msttexthash="503529" _msthash="95">Limpar minhas respostas</button>
+</div>
+
+<div id="footerDIV"><span><br><hr><span style="padding-right:5px;float:left;font-family:arial;font-size:12px;" _msttexthash="4231357" _msthash="96">© 2017 - 2022 Cisco e/ou suas afiliadas. Todos os direitos reservados. Público da Cisco</span><br></span></div>
+
+
+</div>
+
+
+<script>
+
+	window.addEventListener('load',function(){
+		console.log('loaded');
+		document.querySelectorAll(".AnswerGray").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".show-answer").forEach(function(ele){
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.remove("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.add("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		var event = new Event('click', {
+			bubbles: true,
+			cancelable: true,
+		});
+		document.querySelectorAll(".show-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".show-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".hide-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".hide-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".clear-all-responces").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				document.querySelectorAll("textArea").forEach(function(ele){
+					ele.value = "";
+				})
+			})
+		})
+
+		
+		
+	})
+	</script>
+</body></html>

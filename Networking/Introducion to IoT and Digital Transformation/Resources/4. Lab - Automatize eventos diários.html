@@ -1,0 +1,730 @@
+
+<!-- saved from url=(0456)https://prod-tf-ui.s3.amazonaws.com/s/ff9e491c-49be-4734-803e-a79e6e83dab1/resources/f94ad52b-1ba7-458a-85cf-4da662b03c1b/v1/en-US/Automate_Everyday_Events.htm?response-cache-control=no-cache&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241016T100603Z&X-Amz-SignedHeaders=host&X-Amz-Expires=30&X-Amz-Credential=AKIAUJZRIEYBKYV2WA5Q%2F20241016%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dbf7fce980ef8ddacf8ee6a80fe872324a6a48a78ca757c607d444235cb337fb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title _msttexthash="842933" _msthash="0">Lab - Automatize eventos diários</title>
+<style>
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.AnswerLineL25, li.AnswerLineL25, div.AnswerLineL25
+	{mso-style-name:"Answer Line L25";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-weight:bold;
+	font-style:italic;}
+p.PageHead, li.PageHead, div.PageHead
+	{mso-style-name:"Page Head";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	border:none;
+	padding:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.TableText, li.TableText, div.TableText
+	{mso-style-name:"Table Text";
+	mso-style-link:"Table Text Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.TableTextChar
+	{mso-style-name:"Table Text Char";
+	mso-style-link:"Table Text";}
+p.TableHeading, li.TableHeading, div.TableHeading
+	{mso-style-name:"Table Heading";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ConfigWindow, li.ConfigWindow, div.ConfigWindow
+	{mso-style-name:"Config Window";
+	margin:0in;
+	font-size:3.0pt;
+	font-family:"Arial",sans-serif;
+	color:white;
+	font-style:italic;}
+p.SubStepAlpha, li.SubStepAlpha, div.SubStepAlpha
+	{mso-style-name:"SubStep Alpha";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.BodyTextL25, li.BodyTextL25, div.BodyTextL25
+	{mso-style-name:"Body Text L25";
+	mso-style-link:"Body Text L25 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	/* margin-left:.25in; */
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+p.SubStepNum, li.SubStepNum, div.SubStepNum
+	{mso-style-name:"SubStep Num";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:SimSun;
+	font-weight:bold;}
+span.BodyTextL25Char
+	{mso-style-name:"Body Text L25 Char";
+	mso-style-link:"Body Text L25";}
+p.TableAnswer, li.TableAnswer, div.TableAnswer
+	{mso-style-name:"Table Answer";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+span.AnswerGray
+	{mso-style-name:"Answer Gray";
+	font-family:"Arial",sans-serif;
+	border:none;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size: 11.5pt;
+	font-family:"Arial",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:76.3pt .75in .9in .75in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+
+	.AnswerGray{
+	padding: 0.2rem;
+}
+
+.question-action-container{
+	margin-top: 6pt;
+    margin-right: 0in;
+    margin-bottom: 6pt;
+    /* margin-left: 0.5in; */
+}
+
+.show-answer, .hide-answer {
+	padding: 0.5rem 1rem;
+	background-color: #00bceb;
+	color: #fff;
+	border: 0px;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+
+.global-action-container {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.global-action-container .btn__action {
+	margin: 10px;
+}
+.btn__container button.btn__action:not(.is-full-width) {
+	width: calc(50% - .5%);
+}
+.btn-text {
+	border: 0px;
+	padding: 0.5rem 1rem;
+	background-color: #6abf4b;
+	color: #fff;
+	border-radius: 0;
+	cursor: pointer;
+	font-size: 11.5pt;
+}
+
+.hidden{
+	display: none;
+}
+.dark-theme {
+        color: #fff;
+      }
+      .dark-theme .dark-color {
+        color: #fff !important;
+      }
+      .dark-theme p.ConfigWindow,
+      .dark-theme li.ConfigWindow,
+      .dark-theme div.ConfigWindow {
+        mso-style-name: "Config Window";
+        color: #212328;
+      }
+      .dark-theme h4 {
+        color: #212328;
+      }
+      .dark-theme .MsoTitle span {
+        color: #fff !important;
+      }
+      .dark-theme textarea {
+        background-color: #212328;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-theme .BodyTextL25Answer > span {
+        padding: 4px;
+      }
+      .dark-theme .BodyTextL25Answer span {
+        color: #fff;
+      }
+      .dark-theme table tbody tr td {
+        color: #fff !important;
+      }
+      .dark-theme table .TableHeading {
+        color: #000;
+      }
+	  p.BodyTextL50Answer,
+	li.BodyTextL50Answer,
+	div.BodyTextL50Answer {
+		mso-style-name: "Body Text L50 Answer";
+		mso-style-link: "Body Text L50 Answer Char";
+		margin-top: 6.0pt;
+		margin-right: 0in;
+		margin-bottom: 6.0pt;
+		background: #D9D9D9;
+		font-size: 10.0pt;
+		font-family: "Arial", sans-serif;
+		font-weight: bold;
+	}
+	.dark-theme .BodyTextL50Answer {
+        background-color: #000;
+        color: #fff;
+    }
+</style>
+
+</head>
+
+<body lang="EN-US" style="word-wrap:break-word">
+
+<div class="WordSection1">
+
+<p class="MsoTitle" _msttexthash="842933" _msthash="1">Lab - Automatize eventos diários </p>
+
+<h1 _msttexthash="159952" _msthash="2">Objectivos</h1>
+
+<p class="BodyTextL25"><span lang="EN" _msttexthash="4648241" _msthash="3">Imagine atividades diárias que fariam
+sua vida mais fácil se eles fossem automatizados.</span></p>
+
+<h1 _msttexthash="466609" _msthash="4">Antecedentes / Cenário</h1>
+
+<p class="BodyTextL25"><span lang="EN" _msttexthash="36250955" _msthash="5">Muitas atividades realizadas diariamente são
+redundantes e têm o potencial de serem automatizados com os avanços na
+Tecnologia. Use sua imaginação ou pesquise vídeos para ajudá-lo a pensar em
+atividades que poderiam ser mais úteis se contivessem
+Sensores.</span></p>
+
+<h1 _msttexthash="208416" _msthash="6">Instruções</h1>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="979615" _msthash="7">Parte 1: Atividades para automatizar</h2>
+
+<p class="BodyTextL25"><span lang="EN" _msttexthash="197118376" _msthash="8">Pense no seu dia em casa, na escola,
+ou escritório. Há alguma atividade que você acha que economizaria seu tempo se eles
+foram automatizados? Por exemplo, se a geladeira inteligente em sua casa tivesse
+sensores para detectar o peso, poderia determinar que a caixa de leite estava ficando
+baixo e peça automaticamente o leite que é entregue em sua casa. Use a tabela
+abaixo para listar pelo menos 5 atividades e como cada atividade específica pode ser
+automatizado. Se você usar algum vídeo para gerar ideias para automação. Liste o nome
+do vídeo e do URL principal após a tabela e potencialmente compartilhar com o grupo
+Membros.</span></p>
+
+<p class="BodyTextL25"><span lang="EN" _msttexthash="3335722" _msthash="9">Liste as atividades selecionadas e como a atividade pode ser automatizada.</span></p>
+
+<div align="center">
+
+<table class="LabTableStyle" border="1" cellspacing="0" cellpadding="0" summary="list of activities that could be automated" width="672" style="width:7.0in;border-collapse:collapse;border:none">
+ <thead>
+  <tr style="page-break-inside:avoid">
+   <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+   background:#DBE5F1;padding:.7pt 5.75pt .7pt 5.75pt">
+   <p class="TableHeading" _msttexthash="130507" _msthash="10">Atividade</p>
+   </td>
+   <td width="504" valign="bottom" style="width:378.15pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#DBE5F1;padding:.7pt 5.75pt .7pt 5.75pt">
+   <p class="TableHeading"><span style="color:black" _msttexthash="972179" _msthash="11">Como seria a atividade
+ automatizado?</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody><tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+ <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="12">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="13"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="14">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="15"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="16">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="17"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="18">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="19"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="20">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="21"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="22">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="23"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="24">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="25"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="26">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="27"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="28">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="29"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="30">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="31"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="32">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="33"></textarea>
+    </fieldset>
+</div>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt">
+  <div class="AnswerLineL50">
+    <fieldset style="font-size:10px;font-style:normal;color:gray;">
+        <legend _msttexthash="272584" _msthash="34">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="35"></textarea>
+    </fieldset>
+</div>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="ConfigWindow" _msttexthash="1411891" _msthash="36">Linha em branco, Sem informações adicionais</p>
+
+<div align="center">
+
+
+
+</div>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		
+	</div>
+	
+	<p class="BodyTextL25" _msthidden="14"><span class="AnswerGray" style="background-color: transparent;" _mstvisible="0"><table class="LabAnswerTable" border="1" align="center" cellspacing="0" cellpadding="0" summary="list of activities that could be automated." width="672" style="width:7.0in;border-collapse:collapse;border:none" _mstvisible="1">
+ <thead _mstvisible="2">
+  <tr style="page-break-inside:avoid" _mstvisible="3">
+   <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+   background:#F2DBDB;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+   <p class="TableHeading" _msttexthash="130507" _msthash="37" _mstvisible="5">Atividade</p>
+   </td>
+   <td width="504" valign="bottom" style="width:378.15pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#F2DBDB;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+   <p class="TableHeading" _mstvisible="5"><span style="color:black" _msttexthash="972179" _msthash="38" _mstvisible="6">Como seria a atividade
+ automatizado?</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody _mstvisible="2"><tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="233480" _msthash="39" _mstvisible="5">Acenda as luzes</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="4015063" _msthash="40" _mstvisible="5">Quando você acorda de manhã, as luzes do quarto
+ e na cozinha ligam automaticamente.</p>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="477516" _msthash="41" _mstvisible="5">Prepare o café da manhã</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="4703634" _msthash="42" _mstvisible="5">O menu pré-selecionado é preparado e pronto automaticamente
+ em um horário específico.</p>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="284427" _msthash="43" _mstvisible="5">Acorde crianças</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="57161962" _msthash="44" _mstvisible="5">Se as crianças ficarem na cama após um horário específico, um
+ a mensagem é reproduzida. Se a criança ainda estiver na cama após 5 minutos, a cama treme.
+ Após mais 5 minutos, a cama levanta suavemente para uma posição inclinada e
+ começa a tocar música. Depois que as crianças se levantam e saem da cama, a cama
+ retorna à posição normal.</p>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="434564" _msthash="45" _mstvisible="5">Preparação de roupas</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="33833670" _msthash="46" _mstvisible="5">Um cronograma é verificado para o que está na agenda para o
+ dia e roupas apropriadas são selecionadas e colocadas no quarto pelo
+ hora de você sair do chuveiro. Os sapatos são engraxados, se necessário. Coordenação
+ acessórios também são fornecidos.</p>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="152542" _msthash="47" _mstvisible="5">Lavandaria</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="3313037" _msthash="48" _mstvisible="5">Com base nos níveis de lavanderia, a lavanderia é feita e as roupas
+ dobrado.</p>
+  </td>
+ </tr>
+ <tr style="page-break-inside:avoid" _mstvisible="3">
+  <td width="168" valign="bottom" style="width:125.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="95823" _msthash="49" _mstvisible="5">Compras</p>
+  </td>
+  <td width="504" valign="bottom" style="width:378.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:.7pt 5.75pt .7pt 5.75pt" _mstvisible="4">
+  <p class="TableText" _msttexthash="23305867" _msthash="50" _mstvisible="5">O refrigerador monitora o nível de estoque de alimentos e
+ envia uma lista de itens de reordenação de alimentos para a loja, a loja verifica o
+ inventário e envia um alerta para aprovação e cronograma de entrega. </p>
+  </td>
+ </tr>
+</tbody></table></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer hidden" _msttexthash="297921" _msthash="51">Mostrar resposta</button>
+		<button class="MetroBtn hide-answer" _msttexthash="296335" _msthash="52" _mstvisible="0">Ocultar resposta</button>
+	</div>
+	</div>
+
+<p class="ConfigWindow" _msttexthash="1411891" _msthash="53">Linha em branco, Sem informações adicionais</p>
+
+<h2 style="margin-left:0in;text-indent:0in" _msttexthash="300131" _msthash="54">Parte 2: Reflexão</h2>
+
+<p class="BodyTextL25" _msttexthash="6539988" _msthash="55">Liste qualquer URL e título de vídeo associado que você usou para o Spark
+ideias para a lista de automação.</p>
+
+<div class="question-container">
+	<div class="AnswerLineL50">
+		<fieldset style="width:50%;font-size:10px;font-style:normal;color:gray;"><legend _msttexthash="272584" _msthash="56">Área de resposta</legend><textarea rows="3" name="answerArea" placeholder="Digite sua resposta aqui." style="border:none;width:100%;" _mstplaceholder="409071" _msthash="57"></textarea></fieldset>
+	</div>
+	
+	<p class="BodyTextL50Answer" _msthidden="1"><span class="AnswerGray" _mstvisible="0"><span style="
+	border:none" _msttexthash="5215847" _msthash="58" _mstvisible="1">As respostas variam, mas um vídeo de amostra
+está no YouTube.com e se chama O que é automação?.</span></span></p>
+	
+	<div class="question-action-container">
+		<button class="MetroBtn show-answer hidden" _msttexthash="297921" _msthash="59">Mostrar resposta</button>
+		<button class="MetroBtn hide-answer" _msttexthash="296335" _msthash="60" _mstvisible="0">Ocultar resposta</button>
+	</div>
+	</div>
+
+<!-- <p class=BodyTextL25><span class=AnswerGray><span style='
+border:none'><span style='border:none'>Answers, will vary, but a sample video
+is on YouTube.com and is called What is Automation?.</span></span></span></p> -->
+
+<p class="ConfigWindow" _msttexthash="262353" _msthash="61">Fim do documento</p>
+
+<div class="global-action-container btn__container">
+	<button class="show-all-answers btn-text btn__action hidden" _msttexthash="587210" _msthash="62">Mostrar todas as respostas</button>
+	<button class="hide-all-answers btn-text btn__action" _msttexthash="585624" _msthash="63" _mstvisible="0">Ocultar todas as respostas</button>
+	<button class="clear-all-responces btn-text btn__action" _msttexthash="503529" _msthash="64">Limpar minhas respostas</button>
+</div>
+
+<div id="footerDIV"><span><br><hr><span style="padding-right:5px;float:left;font-family:arial;font-size:12px;" _msttexthash="4231357" _msthash="65">© 2017 - 2022 Cisco e/ou suas afiliadas. Todos os direitos reservados. Público da Cisco</span><br></span></div>
+
+
+
+</div>
+
+
+<script>
+
+	window.addEventListener('load',function(){
+		console.log('loaded');
+		document.querySelectorAll(".AnswerGray").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){
+			ele.classList.add("hidden");
+		})
+		document.querySelectorAll(".show-answer").forEach(function(ele){
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.remove("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		document.querySelectorAll(".hide-answer").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				e.currentTarget.closest('.question-container').querySelectorAll(".AnswerGray").forEach(function(ele){
+					ele.classList.add("hidden");
+				})
+				ele.classList.add("hidden");
+			})
+		})
+		var event = new Event('click', {
+			bubbles: true,
+			cancelable: true,
+		});
+		document.querySelectorAll(".show-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.nextElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".show-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".hide-all-answers").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				e.currentTarget.previousElementSibling.classList.remove("hidden");
+				 ele.classList.add('hidden');
+				document.querySelectorAll(".hide-answer").forEach(function(ele){
+					ele.dispatchEvent(event);
+				})
+			})
+		})
+
+		document.querySelectorAll(".clear-all-responces").forEach(function(ele){	
+			ele.addEventListener("click",function(e){
+				document.querySelectorAll("textArea").forEach(function(ele){
+					ele.value = "";
+				})
+			})
+		})
+
+		
+		
+	})
+	</script>
+
+
+
+</body></html>

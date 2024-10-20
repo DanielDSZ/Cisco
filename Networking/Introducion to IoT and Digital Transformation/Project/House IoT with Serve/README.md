@@ -20,6 +20,6 @@ This project in **Cisco Packet Tracer** was designed to demonstrate the connecti
 
 This project demonstrates how to set up a simple network to connect and manage IoT devices using a local server, enabling control of the devices through the internal network.
 ## Screenshots
-
+![IoT Serve](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/House%20IoT%20with%20Serve/IoT%20Serve.png)
 
 

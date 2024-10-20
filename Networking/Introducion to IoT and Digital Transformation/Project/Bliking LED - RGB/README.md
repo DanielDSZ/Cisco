@@ -22,7 +22,7 @@ This setup creates a **pulsing effect**, where the LED gradually brightens and r
 
 ### Screenshots
 
-![LED]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/Bliking%20LED%20-%20RGB/LED.png))
+![LED](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/Bliking%20LED%20-%20RGB/LED.png)
 
 ## RGB LED Control with MCU
 
@@ -73,5 +73,5 @@ This flowchart demonstrates a program that controls an **RGB LED** using a **Mic
 This setup creates a **color-cycling effect**, where the RGB LED transitions between red, green, and blue, looping indefinitely.
 ### Screenshots
 
-![LED RGB]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/Bliking%20LED%20-%20RGB/RGB.png))
+![LED RGB](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/Bliking%20LED%20-%20RGB/RGB.png)
 

@@ -16,5 +16,5 @@ This project in **Cisco Packet Tracer** was designed to demonstrate the connecti
 This project demonstrates how to set up a simple network to connect and manage IoT devices using only a Home Gateway, enabling control of the devices through the internal network.
 ### Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Home Gateway](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Introducion%20to%20IoT%20and%20Digital%20Transformation/Project/Connect%20Devices%20to%20a%20Home%20Gateway/Home%20Gateway.png)
 

@@ -9,7 +9,7 @@ This repository contains **study resources** and **hands-on projects** I am deve
 - CCNA (Cisco Certified Network Associate)
 - CCNP (Cisco Certified Network Professional)
 - Other relevant Cisco certifications
-- [Cisco Packet Tracer] https://www.netacad.com/resources/lab-downloads?courseLang=en-US
+- [Cisco Packet Tracer] (https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
 
 ## Contents
 

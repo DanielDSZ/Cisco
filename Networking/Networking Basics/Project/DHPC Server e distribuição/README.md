@@ -29,7 +29,7 @@ Build a segmented network infrastructure using VLANs and centralized DHCP IP add
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Networking](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Networking%20Basics/Project/DHPC%20Server%20e%20distribui%C3%A7%C3%A3o/DHPC%20Server%20e%20distribui%C3%A7%C3%A3o.png)
 
 
 ## Router Configuration

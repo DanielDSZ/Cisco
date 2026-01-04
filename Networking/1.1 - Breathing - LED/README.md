@@ -27,7 +27,7 @@ This project demonstrates basic embedded-style I/O control in **Cisco Packet Tra
 3. Connect:
    - **MCU D1** → **LED D0** (or the LED pin used in your topology)
 
-![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Breathing%20-%20LED/docs/Breathing%20LED%201.png)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.1%20-%20Breathing%20-%20LED/docs/Breathing%20LED%201.png)
 
 ## Program Logic (Blockly)
 1. Set the output slot as OUTPUT:
@@ -40,7 +40,7 @@ This project demonstrates basic embedded-style I/O control in **Cisco Packet Tra
      - `analogWrite(slot 1, i)`
      - `delay(10 ms)`
      
-![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Breathing%20-%20LED/docs/Breathing%20LED%202.png)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.1%20-%20Breathing%20-%20LED/docs/Breathing%20LED%202.png)
 
 ### Suggested Parameters
 - **Step size (`25`)**
@@ -71,5 +71,6 @@ This project demonstrates basic embedded-style I/O control in **Cisco Packet Tra
 - Extend to **RGB LED** with independent channel control and patterns
 
 ## License
-[MIT](https://github.com/DanielDSZ/Cisco/blob/main/Networking/Breathing%20-%20LED/docs/LICENSE.txt)
+[MIT](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.1%20-%20Breathing%20-%20LED/docs/LICENSE.txt)
+
 

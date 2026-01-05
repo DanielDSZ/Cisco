@@ -9,7 +9,7 @@ The result is a continuous, professional-looking transition:
 - **Blue → Red**
 …and repeats forever.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.2%20-%20Blinking%20-%20RGB/docs/Blinking%20-%20RGB.gif)
 
 ## Features
 - Smooth RGB crossfading using PWM (`analogWrite`)
@@ -75,7 +75,7 @@ Each crossfade uses:
 - `count with i from 0 to 1023 by 25`
 - `delay(10 ms)` between steps
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.2%20-%20Blinking%20-%20RGB/docs/Blinking%20-%20RGB.png)
 
 ## How to Run
 1. Open the `.pkt` file in Cisco Packet Tracer.
@@ -109,23 +109,6 @@ Each crossfade uses:
 - Add debug output (log current `i` and channel values)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.2%20-%20Blinking%20-%20RGB/docs/LICENSE)
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Deploy
-
-Para fazer o deploy desse projeto rode
-
-```bash
-  npm run deploy
-```
-
-
-## Licença
-
-[MIT](https://choosealicense.com/licenses/mit/)
 

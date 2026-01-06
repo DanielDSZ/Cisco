@@ -28,8 +28,6 @@ IoT devices connect through dedicated Wi‑Fi/AP infrastructure and are **regist
 - Users: Laptop/PC (VLAN 10)
 - IoT: Smart devices (fan, door, garage, etc.) (VLAN 30)
 
-> Tip: Export a Packet Tracer screenshot and save it as `assets/topology.png` so the repository has a visual diagram.
-
 ---
 
 ## IP plan
@@ -241,7 +239,7 @@ Verification:
 
 ---
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.3%20-%20Connect%20Devices%20to%20a%20Home%20Gateway/docs/Connect%20Devices%20to%20a%20Home%20Gateway.png)
 
 ## Notes
 
@@ -254,5 +252,5 @@ Verification:
 
 ## Licença
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.3%20-%20Connect%20Devices%20to%20a%20Home%20Gateway/docs/LICENSE)
 

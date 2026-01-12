@@ -29,7 +29,7 @@ This project simulates a small office network in **Cisco Packet Tracer** featuri
 
 > Note: AP and access-switch uplink port numbers can vary. Use `show cdp neighbors` on SW0 to confirm exact ports.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/DanielDSZ/Cisco/blob/main/Networking/1.4%20-%20DHCP%20Server%20and%20Distribution/docs/DHCP%20-%20Server%20and%20Distribution.png)
 ---
 
 ## 2) VLANs and IP Addressing Plan
